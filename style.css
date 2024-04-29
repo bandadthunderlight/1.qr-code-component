@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Outfit;
+  src: url(./fonts/Outfit-Regular.ttf);
+}
+@font-face {
+  font-family: Outfit-Bold;
+  src: url(./fonts/Outfit-Bold.ttf);
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Outfit;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.QRcode-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-gray);
+}
+.QRcode-container {
+  text-align: center;
+  width: 20rem;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.QRcode-image {
+  width: 100%;
+  border-radius: 10px;
+}
+.QRcode-title {
+  font-family: Outfit-Bold;
+  color: var(--Dark-blue);
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+.QRcode-text {
+  color: var(--Grayish-blue);
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
